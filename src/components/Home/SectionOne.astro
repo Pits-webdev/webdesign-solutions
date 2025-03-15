@@ -1,0 +1,36 @@
+---
+import Counter from "../ui/Counter";
+---
+
+<section class="w-full h-full mt-28 px-10">
+   <h2 class="mx-auto max-w-[980px] text-center">
+      Für bewusste Unternehmer, deren Dienstleistungen und Produkte wir getrost
+      weiterempfehlen können.
+   </h2>
+
+   <!-- counter -->
+   <div
+      class="grid grid-cols-[repeat(auto-fit,_minmax(min(320px),_1fr))] gap-10 px-20 mt-30 text-lg justify-center"
+   >
+      <Counter client:load num={250} char="+" title="Durchgeführte Projekte">
+         <p>
+            Ich haben über 250 Projekte erfolgreich abgeschlossen – und wir
+            fangen gerade erst an!
+         </p>
+      </Counter>
+
+      <Counter client:load num={70} char="%" title="Geschäftswachstum">
+         <p>
+            Meine Strategien haben unseren Kunden geholfen, in nur einem Jahr
+            ein Umsatzwachstum von bis zu 70 % mehr zu erzielen!
+         </p>
+      </Counter>
+
+      <Counter client:load num={500} char="+" title="Zufriedene Kunden">
+         <p>
+            Mehr als 500 zufriedene Kunden vertrauen mir, wenn es darum geht,
+            ihre Ideen zum Leben zu erwecken.
+         </p>
+      </Counter>
+   </div>
+</section>

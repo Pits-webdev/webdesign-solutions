@@ -1,0 +1,37 @@
+---
+import LinkBtn from "../ui/LinkBtn.astro";
+---
+
+<section id="top" class="w-full h-full mt-20 px-10">
+   <div class="flex flex-col items-center">
+      <h1 class="max-w-[980px] text-center mb-14">
+         Große Ideen, kluge Strategien und endlose Kreativität, um Ihre Marke zu
+         stärken&#x26A1;!
+      </h1>
+
+      <p class="max-w-[760px] text-center text-xl">
+         Ihre Anlaufstelle für inspirierende Webdesign und Webentwicklung, die
+         überzeugen. Ich verwandle Ideen in bleibende Eindrücke.
+      </p>
+
+      <div class="mt-14 flex flex-col sm:flex-row gap-3">
+         <LinkBtn
+            linkTitle="Projekte ansehen"
+            pathTitle="#kontakt"
+            variant="accent"
+         />
+         <LinkBtn
+            linkTitle="Kontakt aufnehmen"
+            pathTitle="#kontakt"
+            variant="dark"
+         />
+      </div>
+   </div>
+
+   <div
+      class="w-full h-full xl:h-[calc(100vh-125px)] bg-[#000] rounded-[40px] mt-36"
+   >
+      <video class="mx-auto w-full h-full" muted loop autoplay src="/video.mp4"
+      ></video>
+   </div>
+</section>

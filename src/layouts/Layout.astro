@@ -1,22 +1,114 @@
+---
+import { ClientRouter } from "astro:transitions";
+import { SEO } from "astro-seo";
+import { Image } from "astro:assets";
+
+import Logo from "../assets/images/logo-red.png";
+
+import Navbar from "../components/ui/Navbar";
+import "../styles/globals.css";
+import Footer from "../components/ui/Footer.astro";
+import FollowMouse from "../components/ui/FollowMouse";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+
+		<SEO
+			title={title}
+			titleTemplate="%s - Professionelle Webdesign-Dienstleistungen"
+			description="Entdecken Sie erstklassige Webdesign-Lösungen für Ihr Unternehmen. Wir erstellen maßgeschneiderte und responsive Webseiten, die Ihr Geschäft voranbringen."
+			canonical="https://webdesign-firma.de/"
+			noindex={false}
+			nofollow={false}
+			openGraph={{
+				basic: {
+					title: title || "Professionelle Webdesign-Dienstleistungen",
+					type: "website",
+					image: "/webdesign-preview.png",
+					url: "https://webdesign-firma.de/",
+				},
+				optional: {
+					locale: "de_DE",
+					siteName: "Webdesign Firma",
+					description:
+						"Wir bieten kreative und funktionale Webdesign-Dienstleistungen, die speziell auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind.",
+				},
+				image: {
+					alt: "Vorschau einer professionellen Webdesign-Seite",
+					width: 1200,
+					height: 630,
+					type: "image/png",
+				},
+			}}
+			twitter={{
+				card: "summary_large_image",
+				site: "@webdesignfirma",
+				creator: "@webdesignfirma",
+				title: title || "Professionelle Webdesign-Dienstleistungen",
+				description:
+					"Erfahren Sie, wie unsere maßgeschneiderten Webdesign-Lösungen Ihr Geschäft in die digitale Welt bringen.",
+				image: "/webdesign-preview.png",
+				imageAlt: "Vorschau einer professionellen Webdesign-Seite",
+			}}
+			extend={{
+				meta: [
+					{ name: "twitter:image", content: "/webdesign-preview.png" },
+					{ name: "twitter:title", content: title },
+					{
+						name: "twitter:description",
+						content:
+							"Wir bieten Webdesign, das nicht nur gut aussieht, sondern auch performt. Modern, benutzerfreundlich und genau auf Ihre Ziele abgestimmt.",
+					},
+					{ name: "theme-color", content: "#0056b3" },
+					{ name: "apple-mobile-web-app-capable", content: "yes" },
+					{
+						name: "apple-mobile-web-app-status-bar-style",
+						content: "black",
+					},
+					{ name: "author", content: "Webdesign Firma" },
+					{
+						name: "keywords",
+						content:
+							"Webdesign, Website-Entwicklung, responsives Design, UX/UI",
+					},
+				],
+				link: [
+					{
+						rel: "canonical",
+						href: "https://webdesign-firma.de/",
+					},
+					{ rel: "icon", type: "image/png", href: "/favicon.png" },
+					{ rel: "apple-touch-icon", href: "/favicon.png" },
+				],
+			}}
+		/>
+
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+
+		<title>{title}</title>
+		<ClientRouter />
 	</head>
 	<body>
+		<FollowMouse client:load />
+		<Navbar client:load>
+			<Image loading="lazy" class="mr-2" src={Logo} alt="Logo" />
+		</Navbar>
 		<slot />
+		<Footer />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<script>
+	import "../utils/main.ts";
+</script>

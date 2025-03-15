@@ -1,0 +1,53 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../../assets/images/logo-red.png";
+---
+
+<footer class="w-full h-full bg-[#202020] rounded-t-[52px] mt-20">
+   <div
+      class="px-10 py-8 sm:py-16 grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-16"
+   >
+      <a class="flex items-start space-x-2 mx-auto" href="/">
+         <Image class="w-auto h-6" src={Logo} alt="Logo" />
+         <span class="font-bold text-white text-lg">Webdesign Solution</span>
+      </a>
+      <div class="text-text-white mx-auto">
+         <h5 class="font-bold text-accent text-base mb-2">Kontakt</h5>
+         <p class="text-sm mb-1">company</p>
+         <p class="text-sm mb-1">Adresse</p>
+         <p class="text-sm">PLZ Ort</p>
+      </div>
+
+      <div class="text-text-white mx-auto">
+         <h5 class="font-bold text-accent text-base mb-2">Rechtliches</h5>
+         <p class="text-sm mb-1">Impressum</p>
+         <p class="text-sm">Datenschutz</p>
+      </div>
+
+      <div class="text-text-white mx-auto">
+         <h5 class="text-base sm:text-lg">Schreiben Sie mir eine Email</h5>
+         <div class="relative w-fit">
+            <a class="text-xl lg:text-4xl" href="#kontakt">myemail@gmail.com</a>
+            <span
+               class="absolute left-0 -bottom-[3px] w-full h-[1px] bg-text-white"
+            ></span>
+         </div>
+      </div>
+
+      <div
+         class="text-sm mx-auto mt-auto row-start-6 sm:row-start-3 sm:col-span-3 xl:col-span-1 xl:row-start-2 xl:col-start-2"
+      >
+         <p class="text-sm text-[#7c7c7c]">Copyright © PS Webdesign 2025</p>
+      </div>
+
+      <div class="text-white mx-auto sm:col-start-3">
+         <h5 class="text-base sm:text-lg">Rufen Sie mich an</h5>
+         <div class="relative w-fit">
+            <p class="text-xl lg:text-4xl">049 123456789</p>
+            <span
+               class="absolute left-0 -bottom-[3px] w-full h-[1px] bg-text-white"
+            ></span>
+         </div>
+      </div>
+   </div>
+</footer>
