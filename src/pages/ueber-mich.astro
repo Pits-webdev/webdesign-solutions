@@ -1,7 +1,137 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import Portrait from "../assets/images/Portrait.png";
+
+import MarqueeEffect from "../components/ui/MarqueeEffect.tsx";
+
+/* Images */
+import image1 from "../assets/images/companyImage/Logo1.png";
+import image3 from "../assets/images/companyImage/spaceX.png";
+import image2 from "../assets/images/companyImage/Group.png";
+import image5 from "../assets/images/companyImage/adidas_1.png";
+import image4 from "../assets/images/companyImage/biance_1.png";
+import image6 from "../assets/images/companyImage/solana_1.png";
 ---
 
 <Layout title="Meine Leistungen">
-   <p>Meine Leistungen</p>
+   <div class="w-full h-full mt-12 px-10 flex flex-col gap-y-24">
+      <div class="w-full flex flex-col items-center gap-y-5">
+         <h2 class="max-w-[800px] text-center text-balance">
+            Digitale Verbindungen schaffen, die das Wachstum vorantreiben
+         </h2>
+
+         <p class="max-w-[1200px] text-balance text-center">
+            Hallo, ich bin Peter, ein unabhängiger Designer und Entwickler, der
+            sich auf eine Vielzahl von Projekten spezialisiert hat, darunter
+            Werbeseiten, Landing Pages, E-Commerce-Shops und Mitgliederportale.
+            Darüber hinaus arbeite ich mit Kunden an umfassenden
+            Branding-Initiativen, die vom Logo- und Identitätsdesign bis hin zur
+            Entwicklung vollständiger Markenrichtlinien und -strategien alles
+            abdecken.
+         </p>
+      </div>
+
+      <div class="grid gap-x-20 grid-cols-[40%_1fr]">
+         <div class="w-full h-full">
+            <Image
+               class="w-full h-auto rounded-4xl pl-4 object-cover object-center sticky top-28"
+               src={Portrait}
+               alt="Portrait"
+               loading={"eager"}
+            />
+         </div>
+
+         <div class="space-y-6">
+            <div>
+               <h3 class="mb-3 !text-accent">UI/UX Design</h3>
+
+               <p>
+                  Ich biete einzigartige und kreative Designs, die Ihre Marke
+                  hervorheben und dafür sorgen, dass Sie sich nachhaltig von
+                  Ihrer Konkurrenz abheben. Mit einem unverwechselbaren
+                  visuellen Auftritt stärken Sie Ihre Markenidentität und ziehen
+                  gezielt die Aufmerksamkeit Ihrer Zielgruppe auf sich. Dabei
+                  lege ich besonderen Wert auf Individualität, Qualität und die
+                  perfekte Umsetzung Ihrer Visionen. Lassen Sie uns gemeinsam
+                  Ihr Markenimage auf ein neues Level heben!
+               </p>
+            </div>
+            <div>
+               <h3 class="mb-3 !text-accent">Web Entwicklung</h3>
+
+               <p>
+                  Mit den neuesten Webtechnologien stelle ich sicher, dass Ihre
+                  Projekte auf dem neuesten Stand sind und das volle Potenzial
+                  ausgeschöpft wird. Mein Ziel ist es, maximale Performance,
+                  Sicherheit und Benutzerfreundlichkeit zu gewährleisten, um ein
+                  nahtloses Erlebnis für Sie und Ihre Kunden zu schaffen. Durch
+                  meine Expertise in modernen Technologien biete ich innovative
+                  Lösungen, die speziell auf Ihre Bedürfnisse zugeschnitten
+                  sind. Vertrauen Sie auf meine Fähigkeit, mit
+                  zukunftsorientierten Technologien effiziente und zuverlässige
+                  Ergebnisse zu liefern.
+               </p>
+            </div>
+            <div>
+               <h3 class="mb-3 !text-accent">Skills</h3>
+               <div class="space-y-3">
+                  <div>
+                     <h4 class="!text-lg">Frontend:</h4>
+                     <p>
+                        HTML, CSS, JavaScript, Typescript, React, Next.js,
+                        Astro.js
+                     </p>
+                  </div>
+
+                  <div>
+                     <h4 class="!text-lg">Backend:</h4>
+                     <p>Node.js, Express.js, Django, Pocketbase</p>
+                  </div>
+
+                  <div>
+                     <h4 class="!text-lg">Datenbank:</h4>
+                     <p>PostgreSQL, SQLite, MongoDB</p>
+                  </div>
+
+                  <div>
+                     <h4 class="!text-lg">Headless-CMS:</h4>
+                     <p>Strapi, Sanity</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="w-full flex flex-col items-center gap-y-5">
+         <h2 class="max-w-[800px] text-center text-balance">
+            Marken die mir vertrauen
+         </h2>
+
+         <p class="max-w-[1200px] text-balance text-center">
+            Im Laufe der Jahre habe ich mir vielseitige Fähigkeiten angeeignet,
+            die die Lücke zwischen Design und Entwicklung zu schließen. Meine
+            Expertise liegt darin, visuell überzeugende Erlebnisse zu schaffen
+            und gleichzeitig eine nahtlose Funktionalität zu gewährleisten.
+         </p>
+      </div>
+   </div>
+
+   <div class="m-16">
+      <MarqueeEffect client:visible>
+         <Image src={image1} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image2} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image3} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image4} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image5} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image6} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image1} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image2} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image3} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image4} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image5} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+         <Image src={image6} alt="Logo 1" class="h-12 w-auto" loading="lazy" />
+      </MarqueeEffect>
+   </div>
 </Layout>

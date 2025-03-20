@@ -3,12 +3,12 @@ import { Image } from "astro:assets";
 import Logo from "../../assets/images/logo-red.png";
 ---
 
-<footer class="w-full h-full bg-[#202020] rounded-t-[52px] mt-20">
+<footer class="w-full h-full bg-[#202020] rounded-t-[52px]">
    <div
       class="px-10 py-8 sm:py-16 grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-y-16"
    >
       <a class="flex items-start space-x-2 mx-auto" href="/">
-         <Image class="w-auto h-6" src={Logo} alt="Logo" />
+         <Image class="w-auto h-6" src={Logo} alt="Logo" loading={"eager"} />
          <span class="font-bold text-white text-lg">Webdesign Solution</span>
       </a>
       <div class="text-text-white mx-auto">
@@ -20,8 +20,8 @@ import Logo from "../../assets/images/logo-red.png";
 
       <div class="text-text-white mx-auto">
          <h5 class="font-bold text-accent text-base mb-2">Rechtliches</h5>
-         <p class="text-sm mb-1">Impressum</p>
-         <p class="text-sm">Datenschutz</p>
+         <a href="/impressum" class="text-sm mb-1 block">Impressum</a>
+         <a href="/datenschutz" class="text-sm block">Datenschutz</a>
       </div>
 
       <div class="text-text-white mx-auto">

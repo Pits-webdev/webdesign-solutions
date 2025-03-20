@@ -38,7 +38,7 @@ const Navbar = ({children}: NavProps) => {
                                 "inline-flex items-center gap-3 group  transition duration-500  text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
                                 "hover:bg-accent bg-black-light"
                             )}
-                            href="#kontakt"
+                            href="/kontakt"
                         >
                             {/* Icon */}
                             <div className="w-[32px] h-[32px] bg-white flex items-center justify-end rounded-full overflow-hidden">

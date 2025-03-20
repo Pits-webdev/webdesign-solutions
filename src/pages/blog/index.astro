@@ -1,7 +1,42 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+
+const allBlog = await getCollection("blog");
+
+//console.log(allBlog);
 ---
 
 <Layout title="Blog">
-   <div>Unser blog</div>
+   <div class="w-full h-full mt-12 px-10">
+      <h2 class="text-center mb-20">Blog</h2>
+
+      <div class="flex gap-5">
+         {
+            allBlog.map((article) => (
+               <div>
+                  <img
+                     width="400"
+                     height="200"
+                     src={article.data.image}
+                     alt=""
+                  />
+                  <h3>{article.data.title}</h3>
+                  <p>{article.data.name}</p>
+
+                  <div class="flex items-center justify-between">
+                     <span>{article.data.pubDate}</span>
+
+                     <a
+                        class="bg-accent rounded-full text-sm font-bold text-text-white px-5 py-1"
+                        href={"/blog/" + article.data.slug}
+                     >
+                        More Info
+                     </a>
+                  </div>
+               </div>
+            ))
+         }
+      </div>
+   </div>
 </Layout>

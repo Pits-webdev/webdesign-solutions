@@ -1,11 +1,13 @@
 import {useRef} from "react";
-
 import {motion} from "motion/react";
-import images from "../../data/draggableImages";
 
-const DraggableCarousel = () => {
+interface NavProps {
+    children: React.ReactNode;
+}
+
+const DraggableCarousel = ({children}: NavProps) => {
     const carouselRef = useRef(null);
-    //console.log(images);
+
     return (
         <div className="section overflow-clip">
             <motion.div ref={carouselRef} className="carousel">
@@ -14,11 +16,7 @@ const DraggableCarousel = () => {
                     dragConstraints={carouselRef}
                     className="inner flex gap-5 w-fit hover:cursor-grab active:cursor-grabbing"
                 >
-                    {images.map((image, index) => (
-                        <div key={index} className="w-[400px] h-[320px]  pointer-events-none">
-                            <img src={image.src} alt="porjekte" className="w-full h-full object-cover rounded-xl" />
-                        </div>
-                    ))}
+                    {children}
                 </motion.div>
             </motion.div>
         </div>

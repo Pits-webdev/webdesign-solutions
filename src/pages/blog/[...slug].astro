@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+   const allBlog = await getCollection("blog");
+
+   return allBlog.map((article) => ({
+      params: {
+         slug: article.data.slug,
+      },
+      props: {
+         article,
+      },
+   }));
+}
+
+const { article } = Astro.props;
+---
+
+<Layout title="Blog">
+   <div class="max-w-max h-full px-12 my-12">
+      <h1 class="mb-5">{article.data.title}</h1>
+      <img
+         class="rounded-xl"
+         src={article.data.image}
+         alt="ballons"
+         width="460"
+      />
+   </div>
+</Layout>

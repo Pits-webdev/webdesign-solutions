@@ -81,6 +81,7 @@ const { title } = Astro.props;
 						content:
 							"Webdesign, Website-Entwicklung, responsives Design, UX/UI",
 					},
+					{ name: "mobile-web-app-capable", content: "yes" },
 				],
 				link: [
 					{
@@ -101,8 +102,9 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<FollowMouse client:load />
+
 		<Navbar client:load>
-			<Image loading="lazy" class="mr-2" src={Logo} alt="Logo" />
+			<Image loading="eager" class="mr-2" src={Logo} alt="Logo" />
 		</Navbar>
 		<slot />
 		<Footer />

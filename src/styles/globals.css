@@ -46,19 +46,19 @@
  }
 
  h1{
-   @apply text-text-black text-3xl sm:text-[4.063rem] leading-[110%] font-bold;
+   @apply text-text-black text-3xl sm:text-[4.063rem] leading-[105%] font-bold;
  }
 
  h2{
-   @apply text-text-black text-2xl sm:text-5xl leading-[110%] font-bold;
+   @apply text-text-black text-2xl sm:text-5xl leading-[120%] font-bold;
  }
 
  h3{
-   @apply text-text-black text-[1.625rem] leading-[100%] font-bold;
+   @apply text-text-black text-[1.625rem] leading-[120%] font-bold;
  }
 
  h4{
-   @apply text-text-black text-xl leading-[100%] font-bold ;
+   @apply text-text-black text-xl leading-[140%] font-bold ;
  }
 
  /* lenis */
