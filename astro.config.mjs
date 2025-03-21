@@ -15,4 +15,7 @@ export default defineConfig({
   experimental: {
     svg: true,
   },
+
+  site: 'https://Pits-webdev.github.io',
+  base: 'webdesign-solutions',
 });

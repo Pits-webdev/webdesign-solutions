@@ -2,7 +2,7 @@
 title: "Photograph"
 name: "Photograph Webseite"
 pubDate: "10.03.2025"
-image: "/ballons.jpg"
+image: "/webdesign-solutions/ballons.jpg"
 link: "https://www.photograph.de"
 slug: "photograph-webseite"
 ---

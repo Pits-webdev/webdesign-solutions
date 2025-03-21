@@ -1,21 +1,21 @@
 export const navigation = [
     {
         title: "Startseite",
-        path: "/",
+        path: "/webdesign-solutions",
     },
 
     {
         title: "Über mich",
-        path: "/ueber-mich",
+        path: "/webdesign-solutions/ueber-mich",
     },
 
     {
         title: "Projekte",
-        path: "/projekte",
+        path: "/webdesign-solutions/projekte",
     },
 
     {
         title: "Blog",
-        path: "/blog",
+        path: "/webdesign-solutions/blog",
     },
 ];

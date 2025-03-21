@@ -2,7 +2,7 @@
 title: "Carsharing"
 name: "Carsharing Webseite"
 pubDate: "10.09.2023"
-image: "/ballons.jpg"
+image: "/webdesign-solutions/ballons.jpg"
 link: "https://www.carsharing.de"
 slug: "carsharing-webseite"
 ---

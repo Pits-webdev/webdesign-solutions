@@ -16,7 +16,7 @@ const Navbar = ({children}: NavProps) => {
         <header className="h-16 text-base bg-white sticky top-0 z-50 border-b border-b-gray-dark">
             <nav className="relative px-10 h-full flex items-center justify-between">
                 <div className="max-w-[280px] flex justify-start items-center">
-                    <a className="flex flex-col sm:flex-row sm:items-center space-x-2" href="/">
+                    <a className="flex flex-col sm:flex-row sm:items-center space-x-2" href="/webdesign-solutions">
                         {/* Logo */}
                         {children}
 
@@ -38,7 +38,7 @@ const Navbar = ({children}: NavProps) => {
                                 "inline-flex items-center gap-3 group  transition duration-500  text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
                                 "hover:bg-accent bg-black-light"
                             )}
-                            href="/kontakt"
+                            href="/webdesign-solutions/kontakt"
                         >
                             {/* Icon */}
                             <div className="w-[32px] h-[32px] bg-white flex items-center justify-end rounded-full overflow-hidden">

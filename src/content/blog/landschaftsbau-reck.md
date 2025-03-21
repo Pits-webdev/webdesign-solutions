@@ -2,7 +2,7 @@
 title: "Landschaftsbau"
 name: "Landschaftsbau Webseite"
 pubDate: "1.02.2025"
-image: "/ballons.jpg"
+image: "/webdesign-solutions/ballons.jpg"
 link: "https://www.landschaftsbau.de"
 slug: "landschaftsbau-webseite"
 ---
