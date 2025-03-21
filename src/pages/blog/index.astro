@@ -1,25 +1,24 @@
 ---
-import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
-const allBlog = await getCollection("blog");
+import { getCollection } from "astro:content";
 
-//console.log(allBlog);
+const allBlog = await getCollection("blog");
 ---
 
 <Layout title="Blog">
-   <div class="w-full h-full mt-12 px-10">
-      <h2 class="text-center mb-20">Blog</h2>
+   <div class="w-full h-full my-12 px-10">
+      <h2 class="text-center mb-12">Blog</h2>
 
-      <div class="flex gap-5">
+      <div class="grid gap-5 justify-center items-center grid-cols-4">
          {
             allBlog.map((article) => (
                <div>
-                  <img
-                     width="400"
-                     height="200"
+                  <Image
                      src={article.data.image}
-                     alt=""
+                     alt={article.data.name}
+                     class="w-[360px]  h-auto"
                   />
                   <h3>{article.data.title}</h3>
                   <p>{article.data.name}</p>
