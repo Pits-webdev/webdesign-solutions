@@ -1,7 +1,7 @@
 ---
 title: "Sunglass"
 name: "Sunglass Webseite"
-pubDate: "15.05.2021"
+pubDate: 2021-11-15
 image: "./sunGlass.png"
 link: "https://www.Sunglass.com"
 slug: "Sunglass-webseite"

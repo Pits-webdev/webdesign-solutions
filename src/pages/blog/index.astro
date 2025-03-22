@@ -3,35 +3,50 @@ import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 
 import { getCollection } from "astro:content";
+import { formatDate } from "../../utils/formatDate";
 
 const allBlog = await getCollection("blog");
+
+const sortBlog = allBlog.sort((a, b) => {
+   return (
+      new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+   );
+});
 ---
 
 <Layout title="Blog">
-   <div class="w-full h-full my-12 px-10">
+   <div class="w-full h-full mt-10 mb-20 px-10">
       <h2 class="text-center mb-12">Blog</h2>
 
-      <div class="grid gap-5 justify-center items-center grid-cols-4">
+      <div
+         class="grid sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-rows-[auto] gap-8"
+      >
          {
-            allBlog.map((article) => (
-               <div>
+            sortBlog.map((article) => (
+               <div class="grid grid-rows-subgrid row-span-2 p-5 rounded-2xl border border-b-black border-dashed ">
                   <Image
                      src={article.data.image}
                      alt={article.data.name}
-                     class="w-[360px]  h-auto"
+                     class="w-full h-auto "
                   />
-                  <h3>{article.data.title}</h3>
-                  <p>{article.data.name}</p>
+                  <div>
+                     <h3 class="text-center sm:text-left">
+                        {article.data.title}
+                     </h3>
+                     <p class="text-center sm:text-left">{article.data.name}</p>
 
-                  <div class="flex items-center justify-between">
-                     <span>{article.data.pubDate}</span>
+                     <div class="flex flex-col sm:flex-row items-center justify-between">
+                        <span>{formatDate(article.data.pubDate)}</span>
 
-                     <a
-                        class="bg-accent rounded-full text-sm font-bold text-text-white px-5 py-1"
-                        href={"/webdesign-solutions/blog/" + article.data.slug}
-                     >
-                        More Info
-                     </a>
+                        <a
+                           class="bg-accent rounded-full text-sm font-bold text-text-white px-5 py-1.5 mt-4 sm:mt-0"
+                           href={
+                              "/webdesign-solutions/blog/" + article.data.slug
+                           }
+                        >
+                           More Info
+                        </a>
+                     </div>
                   </div>
                </div>
             ))

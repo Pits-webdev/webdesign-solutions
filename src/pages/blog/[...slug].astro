@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
@@ -21,11 +22,11 @@ const { article } = Astro.props;
 <Layout title={"Blog | " + article.data.slug}>
    <div class="max-w-max h-full px-12 my-12">
       <h1 class="mb-5">{article.data.title}</h1>
-      <img
-         class="rounded-xl"
+      <Image
          src={article.data.image}
-         alt="ballons"
-         width="460"
+         alt={article.data.name}
+         class="w-full h-auto"
+         loading={"eager"}
       />
    </div>
 </Layout>

@@ -1,7 +1,7 @@
 ---
 title: "Cryptocoin"
 name: "Cryptocoin Webseite"
-pubDate: "1.04.2024"
+pubDate: 2024-03-01
 image: "./crypto-board.png"
 link: "https://www.cryptocoin.it"
 slug: "Cryptocoin-webseite"

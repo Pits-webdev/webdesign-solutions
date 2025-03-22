@@ -1,7 +1,7 @@
 ---
 title: "Interior"
 name: "Interior Webseite"
-pubDate: "14.08.2022"
+pubDate: 2023-08-10
 image: "./interior.png"
 link: "https://www.interior.de"
 slug: "interior-webseite"

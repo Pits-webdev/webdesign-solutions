@@ -1,7 +1,7 @@
 ---
 title: "Yoga"
 name: "Yoga Webseite"
-pubDate: "1.04.2024"
+pubDate: 2022-11-15
 image: "./yoga.png"
 link: "https://www.yoga.fr"
 slug: "yoga-webseite"
