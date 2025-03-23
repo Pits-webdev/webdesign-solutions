@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
+import { render } from "astro:content";
 
 export async function getStaticPaths() {
    const allBlog = await getCollection("blog");
@@ -17,16 +18,32 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
+const { Content } = await render(article);
 ---
 
 <Layout title={"Blog | " + article.data.slug}>
-   <div class="max-w-max h-full px-12 my-12">
-      <h1 class="mb-5">{article.data.title}</h1>
-      <Image
-         src={article.data.image}
-         alt={article.data.name}
-         class="w-full h-auto"
-         loading={"eager"}
-      />
+   <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 px-12 my-12">
+      <div class="max-w-max h-full">
+         <Image
+            src={article.data.image}
+            alt={article.data.name}
+            class="w-full h-auto"
+            loading={"eager"}
+         />
+
+         <p class="mt-5">{article.data.name}</p>
+      </div>
+
+      <div class="wrapper">
+         <Content />
+      </div>
    </div>
 </Layout>
+
+<style>
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+   }
+</style>
