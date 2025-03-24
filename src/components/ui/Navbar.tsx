@@ -4,14 +4,19 @@ import {navigation} from "../../data/navigation";
 
 interface NavProps {
     children: React.ReactNode;
+    pathname: string;
 }
 
-const Navbar = ({children}: NavProps) => {
+const Navbar = ({children, pathname}: NavProps) => {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     const handleMobileMenu = () => {
         setMobileOpen((prev) => !prev);
     };
+
+    //TODO - remove console.log
+    console.log(pathname);
+
     return (
         <header className="h-16 text-base bg-white sticky top-0 z-50 border-b border-b-gray-dark">
             <nav className="relative px-10 h-full flex items-center justify-between">
@@ -26,7 +31,15 @@ const Navbar = ({children}: NavProps) => {
                 <ul className="hidden xl:flex justify-center space-x-12">
                     {navigation.map(({path, title}) => (
                         <li key={title}>
-                            <a href={path}>{title}</a>
+                            <a className="relative group" href={path}>
+                                {title}
+
+                                {pathname === path ? (
+                                    <span className="absolute left-0 -bottom-0.5 w-full h-0.5 bg-accent"></span>
+                                ) : (
+                                    <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 transition-[width]  duration-500 bg-accent group-hover:w-full"></span>
+                                )}
+                            </a>
                         </li>
                     ))}
                 </ul>

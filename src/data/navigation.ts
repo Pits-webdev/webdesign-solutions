@@ -1,7 +1,7 @@
 export const navigation = [
     {
         title: "Startseite",
-        path: "/webdesign-solutions",
+        path: "/webdesign-solutions/",
     },
 
     {
