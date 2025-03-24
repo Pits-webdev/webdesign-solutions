@@ -10,7 +10,7 @@ const { linkTitle, pathTitle, variant } = Astro.props;
       "inline-flex items-center gap-3 group  transition duration-500 text-text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
       variant === "accent"
          ? "bg-black-light hover:bg-accent"
-         : "hover:bg-accent bg-gray-dark text-text-black ",
+         : "hover:bg-accent bg-gray-dark text-text-black",
    )}
    href={pathTitle}
 >
@@ -32,7 +32,7 @@ const { linkTitle, pathTitle, variant } = Astro.props;
       <div class="group-hover:-translate-y-[40px] transition duration-500">
          <div class="flex justify-center items-center flex-col gap-4">
             <p class="text-base">{linkTitle}</p>
-            <p class="text-base">{linkTitle}</p>
+            <p class="text-base text-text-white">{linkTitle}</p>
          </div>
       </div>
    </div>

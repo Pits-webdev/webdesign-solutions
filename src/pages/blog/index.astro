@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 
 import { getCollection } from "astro:content";
 import { formatDate } from "../../utils/formatDate";
+import LinkBtn from "../../components/ui/LinkBtn.astro";
 
 const allBlog = await getCollection("blog");
 
@@ -38,14 +39,13 @@ const sortBlog = allBlog.sort((a, b) => {
                      <div class="flex flex-col sm:flex-row items-center justify-between">
                         <span>{formatDate(article.data.pubDate)}</span>
 
-                        <a
-                           class="bg-accent rounded-full text-sm font-bold text-text-white px-5 py-1.5 mt-4 sm:mt-0"
-                           href={
+                        <LinkBtn
+                           linkTitle={"Info " + article.data.title}
+                           pathTitle={
                               "/webdesign-solutions/blog/" + article.data.slug
                            }
-                        >
-                           More Info
-                        </a>
+                           variant="light"
+                        />
                      </div>
                   </div>
                </div>
