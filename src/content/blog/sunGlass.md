@@ -29,3 +29,5 @@ Sunglass ist nicht nur eine Plattform, sondern auch eine Community. Hier kannst 
 
 Fragen oder Feedback? Kontaktiere uns direkt über die Webseite: [Sunglass](https://www.sunglass.com)
 
+[zurück Blog-Page](/webdesign-solutions/blog)
+

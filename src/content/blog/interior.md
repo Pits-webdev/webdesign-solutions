@@ -29,3 +29,5 @@ Interior ist nicht nur eine Plattform, sondern auch eine Community. Hier kannst 
 
 Fragen oder Feedback? Kontaktiere uns direkt über die Webseite: [Interior](https://www.interior.de)
 
+[zurück Blog-Page](/webdesign-solutions/blog)
+

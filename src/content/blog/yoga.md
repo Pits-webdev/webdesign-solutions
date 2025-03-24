@@ -29,3 +29,5 @@ Yoga ist nicht nur eine Plattform, sondern auch eine Community. Hier kannst du:
 
 Fragen oder Feedback? Kontaktiere uns direkt über die Webseite: [Yoga](https://www.yoga.fr)
 
+[zurück Blog-Page](/webdesign-solutions/blog)
+

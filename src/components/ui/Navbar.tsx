@@ -36,7 +36,7 @@ const Navbar = ({children}: NavProps) => {
                         <a
                             className={twMerge(
                                 "inline-flex items-center gap-3 group  transition duration-500  text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
-                                "hover:bg-accent bg-black-light"
+                                "hover:bg-accent bg-gray-dark text-text-black"
                             )}
                             href="/webdesign-solutions/kontakt"
                         >
@@ -84,7 +84,7 @@ const Navbar = ({children}: NavProps) => {
                                 <div className="group-hover:-translate-y-[40px] transition duration-500">
                                     <div className="flex justify-center items-center flex-col gap-4">
                                         <p className="text-base">Kontakt aufnehmen</p>
-                                        <p className="text-base">Kontakt aufnehmen</p>
+                                        <p className="text-base text-text-white">Kontakt aufnehmen</p>
                                     </div>
                                 </div>
                             </div>

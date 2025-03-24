@@ -7,10 +7,10 @@ const { linkTitle, pathTitle, variant } = Astro.props;
 
 <a
    class={twMerge(
-      "inline-flex items-center gap-3 group  transition duration-500  text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
+      "inline-flex items-center gap-3 group  transition duration-500 text-text-white h-10 pl-[4px] pr-3 rounded-full overflow-hidden",
       variant === "accent"
-         ? "bg-accent hover:black-light"
-         : "hover:bg-accent bg-black-light",
+         ? "bg-black-light hover:bg-accent"
+         : "hover:bg-accent bg-gray-dark text-text-black ",
    )}
    href={pathTitle}
 >
