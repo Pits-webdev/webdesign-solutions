@@ -14,7 +14,7 @@ const Navbar = ({children, pathname}: NavProps) => {
         setMobileOpen((prev) => !prev);
     };
 
-    //TODO - remove console.log
+    //TODO - remove console.log not working in production
     console.log(pathname);
 
     return (
