@@ -14,8 +14,7 @@ const Navbar = ({children, pathname}: NavProps) => {
         setMobileOpen((prev) => !prev);
     };
 
-    //TODO - remove console.log not working in production
-    console.log(pathname);
+    const isActive = pathname.replace(/\/$/, "");
 
     return (
         <header className="h-16 text-base bg-white sticky top-0 z-50 border-b border-b-gray-dark">
@@ -34,7 +33,7 @@ const Navbar = ({children, pathname}: NavProps) => {
                             <a className="relative group" href={path}>
                                 {title}
 
-                                {pathname === path ? (
+                                {isActive === path ? (
                                     <span className="absolute left-0 -bottom-0.5 w-full h-0.5 bg-accent"></span>
                                 ) : (
                                     <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 transition-[width]  duration-500 bg-accent group-hover:w-full"></span>
