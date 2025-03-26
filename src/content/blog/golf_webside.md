@@ -2,7 +2,7 @@
 title: "Golf School"
 name: "Golf School Webseite"
 pubDate: 2025-03-15
-image: "./golf.png"
+image: "./golf-webside.png"
 link: "https://www.golf.com"
 slug: "golfSchool-webseite"
 ---
@@ -30,5 +30,4 @@ GolfSchool ist nicht nur eine Plattform, sondern auch eine Community. Hier kanns
 Fragen oder Feedback? Kontaktiere uns direkt über die Webseite: [GolfSchool](https://www.golf-school.com)
 
 
-[zurück Blog-Page](/webdesign-solutions/blog)
 

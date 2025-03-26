@@ -34,16 +34,13 @@ const { Content } = await render(article);
          <p class="mt-5">{article.data.name}</p>
       </div>
 
-      <div class="wrapper">
+      <div class="flex flex-col gap-4">
          <Content />
+
+         <a
+            class="w-fit text-text-white bg-accent px-4 py-1 rounded-full"
+            href="/webdesign-solutions/blog">zurück Blogside</a
+         >
       </div>
    </div>
 </Layout>
-
-<style>
-   .wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-   }
-</style>

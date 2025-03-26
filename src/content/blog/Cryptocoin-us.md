@@ -29,5 +29,5 @@ Cryptocoin ist nicht nur eine Plattform, sondern auch eine Community. Hier kanns
 
 Fragen oder Feedback? Kontaktiere uns direkt über die Webseite: [Cryptocoin](https://www.Cryptocoin.it)
 
-[zurück Blog-Page](/webdesign-solutions/blog)
+
 
