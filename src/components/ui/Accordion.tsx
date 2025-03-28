@@ -16,7 +16,7 @@ const Accordion = () => {
                 data-state={activeIndex === 0 ? "open" : "closed"}
             >
                 <div className="accordionTitle py-1">
-                    <h4>
+                    <h3 className="!text-xl">
                         <button
                             onClick={() => handleAccordion(0)}
                             className="w-full h-12 flex justify-between items-center cursor-pointer"
@@ -37,7 +37,7 @@ const Accordion = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                    </h4>
+                    </h3>
                 </div>
                 <div
                     className={twMerge(
@@ -59,7 +59,7 @@ const Accordion = () => {
                 data-state={activeIndex === 1 ? "open" : "closed"}
             >
                 <div className="accordionTitle py-1">
-                    <h4>
+                    <h3 className="!text-xl">
                         <button
                             onClick={() => handleAccordion(1)}
                             className="w-full h-12 flex justify-between items-center cursor-pointer"
@@ -80,7 +80,7 @@ const Accordion = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                    </h4>
+                    </h3>
                 </div>
                 <div
                     className={twMerge(
@@ -102,7 +102,7 @@ const Accordion = () => {
                 data-state={activeIndex === 2 ? "open" : "closed"}
             >
                 <div className="accordionTitle py-1">
-                    <h4>
+                    <h3 className="!text-xl">
                         <button
                             onClick={() => handleAccordion(2)}
                             className="w-full h-12 flex justify-between items-center cursor-pointer"
@@ -123,7 +123,7 @@ const Accordion = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                    </h4>
+                    </h3>
                 </div>
                 <div
                     className={twMerge(
@@ -145,7 +145,7 @@ const Accordion = () => {
                 data-state={activeIndex === 3 ? "open" : "closed"}
             >
                 <div className="accordionTitle py-1">
-                    <h4>
+                    <h3 className="!text-xl">
                         <button
                             onClick={() => handleAccordion(3)}
                             className="w-full h-12 flex justify-between items-center cursor-pointer"
@@ -166,7 +166,7 @@ const Accordion = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                             </svg>
                         </button>
-                    </h4>
+                    </h3>
                 </div>
                 <div
                     className={twMerge(
