@@ -104,7 +104,11 @@ const Navbar = ({children, pathname}: NavProps) => {
                     </div>
 
                     {/* Hamburger */}
-                    <button className="flex xl:hidden cursor-pointer" onClick={handleMobileMenu}>
+                    <button
+                        className="flex xl:hidden cursor-pointer"
+                        onClick={handleMobileMenu}
+                        aria-label="Mobile Menu button"
+                    >
                         {mobileOpen ? (
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
