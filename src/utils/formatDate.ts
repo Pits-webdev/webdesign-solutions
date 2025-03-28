@@ -4,7 +4,7 @@ function formatDate(date: Date): string {
         month: "numeric",
         day: "numeric",
     };
-    return new Date(date).toLocaleDateString(undefined, options);
+    return new Date(date).toLocaleDateString("de-DE", options);
 }
 
 export {formatDate};

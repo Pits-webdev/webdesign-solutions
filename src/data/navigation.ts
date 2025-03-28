@@ -5,13 +5,13 @@ export const navigation = [
     },
 
     {
-        title: "Über mich",
-        path: "/webdesign-solutions/ueber-mich",
+        title: "Leistungen",
+        path: "/webdesign-solutions/leistungen",
     },
 
     {
-        title: "Projekte",
-        path: "/webdesign-solutions/projekte",
+        title: "Über mich",
+        path: "/webdesign-solutions/ueber-mich",
     },
 
     {
