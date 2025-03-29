@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { render } from "astro:content";
+import LinkBtn from "../../components/ui/LinkBtn.astro";
 
 export async function getStaticPaths() {
    const allBlog = await getCollection("blog");
@@ -37,10 +38,13 @@ const { Content } = await render(article);
       <div class="flex flex-col gap-4">
          <Content />
 
-         <a
-            class="w-fit text-text-white bg-accent px-4 py-1 rounded-full"
-            href="/webdesign-solutions/blog">zurück Blogside</a
-         >
+         <div class="w-fit">
+            <LinkBtn
+               linkTitle="zurück zum Blog"
+               pathTitle="/webdesign-solutions/blog"
+               variant="light"
+            />
+         </div>
       </div>
    </div>
 </Layout>

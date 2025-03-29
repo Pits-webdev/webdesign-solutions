@@ -46,9 +46,10 @@ const Accordion = () => {
                     )}
                 >
                     <p className="pb-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam perferendis commodi laboriosam
-                        quasi quisquam, totam officiis eum ratione aut quaerat non nulla natus et sint! Dolores
-                        voluptatibus mollitia veritatis dolorum eligendi sapiente, molestias tenetur!
+                        Ich erstelle einzigartige Designs, die nicht nur Ihre Marke unverwechselbar machen, sondern auch
+                        gezielt Ihre Alleinstellungsmerkmale hervorheben. Mit einer Kombination aus Kreativität,
+                        Strategie und technischem Know-how entwickle ich Lösungen, die Ihre Vision widerspiegeln und
+                        eine starke emotionale Verbindung zu Ihrer Zielgruppe schaffen.
                     </p>
                 </div>
             </div>
@@ -89,9 +90,10 @@ const Accordion = () => {
                     )}
                 >
                     <p className="pb-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam perferendis commodi laboriosam
-                        quasi quisquam, totam officiis eum ratione aut quaerat non nulla natus et sint! Dolores
-                        voluptatibus mollitia veritatis dolorum eligendi sapiente, molestias tenetur!
+                        Ich teste Ihre Webseite auf einer Vielzahl von mobilen Geräten, um sicherzustellen, dass sie
+                        überall gut aussieht und funktioniert. Dabei achte ich nicht nur auf ein ansprechendes Design,
+                        sondern auch auf optimale Ladezeiten, intuitive Navigation und benutzerfreundliche
+                        Interaktionen.
                     </p>
                 </div>
             </div>
@@ -132,9 +134,9 @@ const Accordion = () => {
                     )}
                 >
                     <p className="pb-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam perferendis commodi laboriosam
-                        quasi quisquam, totam officiis eum ratione aut quaerat non nulla natus et sint! Dolores
-                        voluptatibus mollitia veritatis dolorum eligendi sapiente, molestias tenetur!
+                        Ich arbeite mit den neuesten Webtechnologien, um das Maximum aus Ihrer Online-Präsenz
+                        herauszuholen und einen reibungslosen Ablauf zu gewährleisten. Durch den Einsatz moderner Tools
+                        und Frameworks optimiere ich Performance, Ladezeiten und Sicherheit Ihrer Webanwendungen.
                     </p>
                 </div>
             </div>
@@ -175,9 +177,10 @@ const Accordion = () => {
                     )}
                 >
                     <p className="pb-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam perferendis commodi laboriosam
-                        quasi quisquam, totam officiis eum ratione aut quaerat non nulla natus et sint! Dolores
-                        voluptatibus mollitia veritatis dolorum eligendi sapiente, molestias tenetur!
+                        Ich optimiere Ihre Website mithilfe der neuesten Webtechnologien, um maximale Performance und
+                        eine reibungslose Nutzererfahrung zu gewährleisten. Durch gezielte Suchmaschinenoptimierung
+                        (SEO) steigere ich die Sichtbarkeit Ihrer Website, verbessere Ladezeiten und sorge für eine
+                        klare Struktur, die sowohl Benutzer als auch Suchmaschinen überzeugt.
                     </p>
                 </div>
             </div>
