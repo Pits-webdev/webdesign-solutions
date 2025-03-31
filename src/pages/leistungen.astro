@@ -1,4 +1,5 @@
 ---
+import Accordion from "../components/ui/Accordion";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -12,13 +13,15 @@ import Layout from "../layouts/Layout.astro";
          Gemeinsam bringen wir Ihre Projekte zum Erfolg.
       </p>
 
-      <div class="cards grid grid-cols-3 gap-8 justify-between my-24">
+      <div
+         class="cards grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-8 justify-between my-24"
+      >
          <div
             class="card bg-black-light text-white p-8 rounded-2xl flex flex-col gap-4"
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="20.401842mm"
                   height="18.788019mm"
                   viewBox="0 0 20.401842 18.788019"
@@ -51,7 +54,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">01</p>
+                  <p class="text-8xl text-accent">01</p>
                </span>
             </div>
 
@@ -72,7 +75,7 @@ import Layout from "../layouts/Layout.astro";
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="70.113"
                   height="73.008"
                   viewBox="0 0 70.113 73.008"
@@ -98,7 +101,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">02</p>
+                  <p class="text-8xl text-accent">02</p>
                </span>
             </div>
 
@@ -120,7 +123,7 @@ import Layout from "../layouts/Layout.astro";
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="73.992"
                   height="73.993"
                   viewBox="0 0 73.992 73.993"
@@ -154,7 +157,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">03</p>
+                  <p class="text-8xl text-accent">03</p>
                </span>
             </div>
 
@@ -178,7 +181,7 @@ import Layout from "../layouts/Layout.astro";
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="72.816"
                   height="72.048"
                   viewBox="0 0 72.816 72.048"
@@ -225,7 +228,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">04</p>
+                  <p class="text-8xl text-accent">04</p>
                </span>
             </div>
 
@@ -250,7 +253,7 @@ import Layout from "../layouts/Layout.astro";
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="63.742"
                   height="73.127"
                   viewBox="0 0 63.742 73.127"
@@ -274,7 +277,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">05</p>
+                  <p class="text-8xl text-accent">05</p>
                </span>
             </div>
 
@@ -299,7 +302,7 @@ import Layout from "../layouts/Layout.astro";
          >
             <div class="flex justify-between items-center">
                <svg
-                  class="text-gray-dark hover:text-accent"
+                  class="text-gray-dark hover:text-accent hidden md:block"
                   width="48.945"
                   height="73.01"
                   viewBox="0 0 48.945 73.01"
@@ -336,7 +339,7 @@ import Layout from "../layouts/Layout.astro";
                   </g>
                </svg>
                <span>
-                  <p class="text-9xl text-accent">06</p>
+                  <p class="text-8xl text-accent">06</p>
                </span>
             </div>
 
@@ -354,5 +357,16 @@ import Layout from "../layouts/Layout.astro";
             </p>
          </div>
       </div>
+
+      <div class="mb-28">
+         <Accordion client:visible />
+      </div>
    </div>
 </Layout>
+
+<style>
+   span p {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+   }
+</style>
